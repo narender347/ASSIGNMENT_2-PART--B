@@ -51,7 +51,7 @@ def main(raw_args=[]):
     parser.add_argument('-dense_change_ratio', '--dense_change_ratio', type=int, default=4,
                         help='Dense layer size change ratio')
 
-    # Parse CLI arguments
+
     args = parser.parse_args(raw_args)
 
     # -------------------------
