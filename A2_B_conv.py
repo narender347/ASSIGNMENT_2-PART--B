@@ -73,7 +73,7 @@ class ConvolutionalNN(pl.LightningModule):
         # Update accuracy metric (same metric used for test as val)
         self.val_accuracy.update(torch.argmax(y_hat, dim=1), y)
 
-        # Log test accuracy and loss (only on epoch level)
+        # Log test accuracy and loss ,only on epoch level
         self.log("test_accuracy", self.val_accuracy, on_step=False, on_epoch=True)
         self.log("test_loss", loss, on_step=False, on_epoch=True)
 
