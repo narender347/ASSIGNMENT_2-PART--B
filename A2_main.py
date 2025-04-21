@@ -84,5 +84,5 @@ trainer = pl.Trainer(
 train_dataloaders = torch.utils.data.DataLoader(train_data, batch_size=int(len(train_data)/3))
 val_dataloaders = torch.utils.data.DataLoader(val_data)
 
-# Start model training
+# model training
 trainer.fit(model=model, train_dataloaders=train_dataloaders, val_dataloaders=val_dataloaders)
