@@ -6,7 +6,7 @@ Main Files:
 main.py
 This script handles fetching and fine-tuning pretrained models. It allows customization such as adding extra DenseNet layers and freezing specific layers prior to training.
 
-pretrained_model.csv
+pretrained.csv
 This CSV file lists the available pretrained models that can be used for fine-tuning. All models are sourced from the PyTorch library and are sorted in descending order based on their ImageNet accuracy.
 
 train.py (Work in Progress)
